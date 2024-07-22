@@ -1,7 +1,9 @@
 #include "Text.h"
+#include "SoundManager.h"
 
 void Text::ReadFile(std::wstring fileName)
 {
+	SoundManager::GetInstance()->LoadMusic(eSoundList::typeing, true, "../Resource/music/effect/typeing.mp3");
 	std::wifstream file(fileName);
 	file.imbue(std::locale("en_US.UTF-8"));
 
@@ -16,6 +18,7 @@ void Text::ReadFile(std::wstring fileName)
 	}
 	name = fileName;
 	length = textList.size();
+	SoundManager::GetInstance()->PlayMusic(eSoundList::typeing, eSoundChannel::Effect);
 }
 
 void Text::PlayText()
@@ -32,6 +35,7 @@ std::wstring Text::GetText() {
 void Text::NextText()
 {
 	if (text == textList[index] && length != index) {
+
 		index++;
 		text = L"";
 	}
@@ -41,7 +45,9 @@ void Text::Update(float deltaTime)
 {
 	time += deltaTime;
 	if (text == textList[index]) { //시간지나면 자동 이동
+		SoundManager::GetInstance()->StopMusic(eSoundChannel::Effect);
 		if (time > 3.0f) {
+			SoundManager::GetInstance()->PlayMusic(eSoundList::typeing, eSoundChannel::Effect);
 			NextText();
 			time = 0;
 		}

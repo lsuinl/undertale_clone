@@ -59,6 +59,7 @@ void Battle::Update(float deltaTime)
 void Battle::Render(D2DEngine* pRenderTarget)
 {
 	//__super::Render(pRenderTarget);
+	if (Player)SetCullingBound(&Player->Camera->m_ViewBoundBox);
 	pRenderTarget->DrawSquare(350, 650, 300, 600); 
 	for (auto& back : m_Background) {
 		back->Render(pRenderTarget);
@@ -79,6 +80,17 @@ void Battle::Render(D2DEngine* pRenderTarget)
 			}
 		}
 	}
+}
+
+void Battle::CreatePlayer(Character* Player, AnimationScene* ani)
+{
+	ani = dynamic_cast<AnimationScene*>(Player->m_pRootScene);
+	ResourceManager::pInstance->CreateD2DBitmapFromFile(L"../Resource/hearts.png", &ani->m_pBitmap);
+	ani->LoadAnimationAsset(L"../Resource/hearts.png", L"../Resource/csv/idle.csv");
+	ani->LoadAnimationAsset(L"../Resource/hearts.png", L"../Resource/csv/attack.csv");
+	ani->LoadAnimationAsset(L"../Resource/hearts.png", L"../Resource/csv/death.csv");
+	ani->m_RelativeScale = { 1.6,1.6 };
+	ani->m_size = { 27,26 }; ani->m_RelativeLocation = { 485,430 }; ani->SetAnimation(2, false);
 }
 
 void Battle::CreateMonster(std::vector<Monster*> monster, Character* Players, AnimationScene* ani)

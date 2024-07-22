@@ -3,8 +3,8 @@
 class Title:public World
 {
 public:
-	bool isKey = false;
-	float twinkTime = 0.f, twinkLimit = 1.0f;
+	bool start = false;
+	float PressTime = 0.f, limitTime = 0.1f;
 	Title();
 	~Title();
 	virtual void Update(float deltaTime);

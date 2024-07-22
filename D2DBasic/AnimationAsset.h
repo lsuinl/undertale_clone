@@ -54,7 +54,7 @@ struct ANIMATION_INFO // 하나의 동작에 대한 정보
 class AnimationAsset : public ReferenceCounter
 {	
 public:
-	AnimationAsset() { m_Animations.resize(10); };
+	AnimationAsset() { m_Animations.resize(30); };
 	virtual ~AnimationAsset() {};
 public:
 	std::vector<ANIMATION_INFO> m_Animations;  // 애니메이션의 모음

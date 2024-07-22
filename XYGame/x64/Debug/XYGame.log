@@ -1,6 +1,1 @@
-﻿  XYGame.cpp
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Battle.h(8,38): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-  XYSystem.cpp
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Battle.h(8,38): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-  코드를 생성하고 있습니다...
-  XYGame.vcxproj -> C:\Users\User\Documents\GitHub\undertale_clone\x64\Debug\XYGame.exe
+﻿  XYGame.vcxproj -> C:\Users\User\Documents\GitHub\undertale_clone\x64\Debug\XYGame.exe

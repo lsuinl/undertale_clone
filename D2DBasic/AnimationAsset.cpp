@@ -17,8 +17,23 @@ bool AnimationAsset::LoadAnimation(std::wstring FilePath)
 		LoadAnimationFromCSV(4, FilePath.c_str());
 	else if (FilePath == std::wstring(L"../Resource/kenmove.csv")) //적1 공격
 		LoadAnimationFromCSV(5, FilePath.c_str());
-	else if (FilePath == std::wstring(L"../Resource/introduction.csv")) //스토리 배경공격
+	else if (FilePath == std::wstring(L"../Resource/introduction.csv")) //스토리 배경
 		LoadAnimationFromCSV(6, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/mapback.csv")) //메인 맵 매경
+		LoadAnimationFromCSV(7, FilePath.c_str());
+	//캐릭터이동
+	else if (FilePath == std::wstring(L"../Resource/csv/herorun.csv")) //캐릭터 이동 (앞)
+		LoadAnimationFromCSV(8, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/herorunside.csv")) //캐릭터 이동 (옆)
+		LoadAnimationFromCSV(9, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/herorunback.csv")) //캐릭터 이동 (뒤)
+		LoadAnimationFromCSV(10, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/heroidle.csv")) //캐릭터 가만히 (앞)
+		LoadAnimationFromCSV(11, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/heroidleside.csv")) //캐릭터 가만히(옆)
+		LoadAnimationFromCSV(12, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/heroidleback.csv")) //캐릭터 가만히 (뒤)
+		LoadAnimationFromCSV(13, FilePath.c_str());
 	return true;
 }
 

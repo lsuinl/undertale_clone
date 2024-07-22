@@ -5,6 +5,7 @@
 #include "ResourceManager.h"
 #include "ScreenManager.h"
 #include "Battle.h"
+#include "Resource.h" 
 D2DBasic::D2DBasic() {
 	m_pRenderer = new D2DEngine;
 	m_pResourceManager = new ResourceManager;
@@ -27,6 +28,9 @@ void D2DBasic::Initialize(HINSTANCE hInstance)
 	wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
 	wc.lpszClassName = L"BasicWindowClass";
 
+	wc.hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_APPICON));
+	wc.hIconSm = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_APPICON));
+	LoadIcon(hInstance, MAKEINTRESOURCE(IDI_APPICON));
 	// 윈도우 클래스 등록
 	if (!RegisterClassEx(&wc))
 	{
@@ -41,7 +45,7 @@ void D2DBasic::Initialize(HINSTANCE hInstance)
 	g_hWnd = CreateWindowEx(
 		0,
 		L"BasicWindowClass",
-		L"수인이의 D2D교실",
+		L"undertale",
 		WS_OVERLAPPEDWINDOW,	// OR연산으로 조합된 윈도우창 스타일
 		0, 0,	// 시작위치
 		clientRect.right - clientRect.left, clientRect.bottom - clientRect.top, // 너비, 높이

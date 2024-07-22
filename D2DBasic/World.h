@@ -21,7 +21,6 @@ public:
 	AnimationScene* ani = nullptr;//애니메이션 관리
  	std::vector<GameObject*> m_GameObjects; //모든 오브젝트 관리
 	std::vector<Wall*> walls; //벽
-	Character* Player; //플레이어
 public:
 	virtual void Update(float deltaTime);
 	virtual void Render(D2DEngine* pRenderTarget);

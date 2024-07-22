@@ -1,7 +1,8 @@
 #include "Story.h"
 #include "ResourceManager.h"
 #include "ScreenManager.h"
-
+#include "SoundManager.h"
+#include "Title.h"
 Story::Story()
 {
 	intro.ReadFile(L"../Resource/introduction.txt");
@@ -10,6 +11,9 @@ Story::Story()
 	ResourceManager::pInstance->CreateD2DBitmapFromFile(L"../Resource/ui/introduction.png", &background->m_pBitmap);
 	background->LoadAnimationAsset(L"../Resource/ui/introduction.png", L"../Resource/introduction.csv");
 	background->m_size = { 789,325 }; background->m_RelativeScale = { 3.2f,3.2f }; background->SetAnimation(6, false);
+
+	SoundManager::GetInstance()->LoadMusic(eSoundList::Story, true, "../Resource/music/bgm/story.mp3");
+	SoundManager::GetInstance()->PlayMusic(eSoundList::Story, eSoundChannel::BGM);
 }
 
 Story::~Story()
@@ -22,6 +26,9 @@ void Story::Update(float deltaTime)
 	background->Update(deltaTime);
 	intro.Update(deltaTime);
 	if ((GetAsyncKeyState(VK_SPACE) & 0x8000) || (GetAsyncKeyState(VK_RETURN) & 0x8000)|| (*background).isEnd()) {
+		SoundManager::GetInstance()->StopMusic(eSoundChannel::BGM);
+		SoundManager::GetInstance()->StopMusic(eSoundChannel::Effect);
+		ScreenManager::pInstanc->CreateWorld<Title>();
 		ScreenManager::pInstanc->LoadWorld(1);
 	}
 }

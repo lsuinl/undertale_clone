@@ -9,20 +9,21 @@ World::World()
 	//리소스 매니저 초기화
 	float width = 1024;
 	float height = 768;
+	m_pCullingBound = new AABB;
+	m_pCullingBound->SetCenter(width / 2, width / 2);
+	m_pCullingBound->SetExtent(width / 2, height / 2);
 }
 
 World::~World()
 {
-
 }
 
 void World::Update(float deltaTime)
 {
 	std::vector<BoxCollider*> boxComponents;
-	if(Player)SetCullingBound(&Player->Camera->m_ViewBoundBox);
 	for (auto& obj : m_GameObjects) {
 		obj->Update(deltaTime);
-		
+
 		for (auto& com : obj->m_OwnedComponents) { //충돌체 찾기
 			BoxCollider* boxCollider = dynamic_cast<BoxCollider*>(com);
 			if (boxCollider) {
@@ -55,7 +56,7 @@ void World::Update(float deltaTime)
 		components->ProcessOverlap();
 
 }
-
+ 
 void World::Render(D2DEngine* pRenderTarget)
 {
 	//배경은 그냥 그려요
@@ -84,17 +85,6 @@ void World::CreateWalls(std::vector<Wall*> walls, AnimationScene* ani, float x, 
 	ani->LoadAnimationAsset(L"../Resource/hearts.png", L"../Resource/csv/idle.csv");
 	ani->m_RelativeScale = { 0,0};
 	ani->m_size = { width, height }; ani->m_RelativeLocation = { x,y }; ani->SetAnimation(2, false);
-}
-
-void World::CreatePlayer(Character* Player, AnimationScene* ani)
-{
-	ani = dynamic_cast<AnimationScene*>(Player->m_pRootScene);
-	ResourceManager::pInstance->CreateD2DBitmapFromFile(L"../Resource/hearts.png", &ani->m_pBitmap);
-	ani->LoadAnimationAsset(L"../Resource/hearts.png", L"../Resource/csv/idle.csv");
-	ani->LoadAnimationAsset(L"../Resource/hearts.png", L"../Resource/csv/attack.csv");
-	ani->LoadAnimationAsset(L"../Resource/hearts.png", L"../Resource/csv/death.csv");
-	ani->m_RelativeScale = { 1.6,1.6 };
-	ani->m_size = { 27,26 }; ani->m_RelativeLocation = { 485,430 }; ani->SetAnimation(2, false);
 }
 
 

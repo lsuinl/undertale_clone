@@ -165,6 +165,18 @@
     <ClCompile Include="Text.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>소스 파일\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>소스 파일\help</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroIdle.cpp">
+      <Filter>소스 파일\states</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroMove.cpp">
+      <Filter>소스 파일\states</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D2DEngine.h">
@@ -284,6 +296,26 @@
     <ClInclude Include="Text.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Hero.h">
+      <Filter>헤더 파일\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>헤더 파일\help</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroIdle.h">
+      <Filter>헤더 파일\states</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroMove.h">
+      <Filter>헤더 파일\states</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resource\pixil-frame-0.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2DBasic.rc">

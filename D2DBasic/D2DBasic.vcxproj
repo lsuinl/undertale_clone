@@ -147,6 +147,9 @@
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameOver.cpp" />
     <ClCompile Include="Helper.cpp" />
+    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="HeroIdle.cpp" />
+    <ClCompile Include="HeroMove.cpp" />
     <ClCompile Include="Idle.cpp" />
     <ClCompile Include="MathHelper.cpp" />
     <ClCompile Include="Monster.cpp" />
@@ -159,6 +162,7 @@
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
     <ClCompile Include="snowMap.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="Story.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="TimeSystem.cpp" />
@@ -188,6 +192,9 @@
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameOver.h" />
     <ClInclude Include="Helper.h" />
+    <ClInclude Include="Hero.h" />
+    <ClInclude Include="HeroIdle.h" />
+    <ClInclude Include="HeroMove.h" />
     <ClInclude Include="Idle.h" />
     <ClInclude Include="MathHelper.h" />
     <ClInclude Include="Monster.h" />
@@ -195,17 +202,22 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="ReferenceCounter.h" />
     <ClInclude Include="RenderScene.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="Death.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="ScreenManager.h" />
     <ClInclude Include="snowMap.h" />
+    <ClInclude Include="SoundManager.h" />
     <ClInclude Include="Story.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="TimeSystem.h" />
     <ClInclude Include="Title.h" />
     <ClInclude Include="wall.h" />
     <ClInclude Include="World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resource\pixil-frame-0.ico" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="D2DBasic.rc" />
