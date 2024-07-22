@@ -1,0 +1,666 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'g_hWnd'이(가) '0'일 수 있습니다.  이 경우 'ShowWindow' 함수의 사양과 일치하지 않습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 2,
+                  "endLine": 44,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "D2DBasic::Initialize",
+                  "decoratedName": "?Initialize@D2DBasic@@QEAAXPEAUHINSTANCE__@@0PEADHPEAVD2DEngine@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('!RegisterClassExW(&wc)'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('!g_hWnd' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 40,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "'g_hWnd'은(는) 'ShowWindow'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\um\\winuser.h:4512에서 선언됨)의 출력입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "'g_hWnd'은(는) NULL(이)면 안 됩니다. 이는 'ShowWindow'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'g_hWnd'이(가) '0'일 수 있습니다.  이 경우 'UpdateWindow' 함수의 사양과 일치하지 않습니다. 이 오류가 발생할 수 있는 이전 위치는 줄 44을(를) 참조하십시오."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 2,
+                  "endLine": 45,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "D2DBasic::Initialize",
+                  "decoratedName": "?Initialize@D2DBasic@@QEAAXPEAUHINSTANCE__@@0PEADHPEAVD2DEngine@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('!RegisterClassExW(&wc)'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('!g_hWnd' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 40,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "'g_hWnd'은(는) 'ShowWindow'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\um\\winuser.h:4512에서 선언됨)의 출력입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'g_hWnd'은(는) 'UpdateWindow'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\um\\winuser.h:8444에서 선언됨)의 출력입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'g_hWnd'은(는) NULL(이)면 안 됩니다. 이는 'UpdateWindow'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33811.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/User/source/repos/DemoGame/D2DBasic/D2DBasic.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "e112c05da8ae1712efbbbcbf939ee98e2fec9f3ce103246dee5caf7b12d60c9a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/demogame/d2dbasic/d2dbasic.h"
+          },
+          "hashes": {
+            "sha-256": "dfaa5b7a0ed95df27d4c99444ea474dd20910b0ea139ee9db4eec8f4afaabc35"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/user/source/repos/demogame/d2dbasic/d2dengine.h"
+          },
+          "hashes": {
+            "sha-256": "68ba0256fd695f3ca2637f1f0a460257cf825f875b2e72b6154ca78bf75e27a4"
+          }
+        }
+      ]
+    }
+  ]
+}
