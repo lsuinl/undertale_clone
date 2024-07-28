@@ -9,6 +9,7 @@
 class BoxCollider : public Collider, public Component
 {
 	public:
+		bool exSize; //사용자설정박스크기
 		AABB m_Collider;
 		bool isColli=false;
 		D2D_RECT_F m_Rect;

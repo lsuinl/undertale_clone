@@ -9,7 +9,7 @@ class FSMTransition;
 class FiniteStateMachine;
 class FSMState
 {
-	int forward=1;
+	int forward=2;
 	std::string m_Name;
 	FiniteStateMachine* m_pOwner = nullptr;
 public:

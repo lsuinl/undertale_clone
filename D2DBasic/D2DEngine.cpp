@@ -51,6 +51,7 @@
 		if (SUCCEEDED(hr))
 		{
 			hr = m_pRenderTarget->CreateSolidColorBrush(D2D1::ColorF(D2D1::ColorF::AliceBlue), &m_pBrush);
+			hr = m_pRenderTarget->CreateSolidColorBrush(D2D1::ColorF(D2D1::ColorF::Black), &m_pBlackBrush);
 		}
 
 		if (SUCCEEDED(hr))
@@ -84,6 +85,17 @@
 				L"", //locale
 				&m_pDWriteTextFormat
 			);
+
+			hr = m_pDWriteFactory->CreateTextFormat(
+				L"", // FontName    제어판-모든제어판-항목-글꼴-클릭 으로 글꼴이름 확인가능
+				NULL,
+				DWRITE_FONT_WEIGHT_BOLD,
+				DWRITE_FONT_STYLE_NORMAL,
+				DWRITE_FONT_STRETCH_NORMAL,
+				20.0f,   // Font Size
+				L"", //locale
+				&m_pDWriteTextFormats
+			);
 		}
 		// VRAM 정보얻기 위한 개체 생성
 		if (SUCCEEDED(hr))
@@ -101,11 +113,13 @@
 	void D2DEngine::UninitDirect2D()
 	{
 		SAFE_RELEASE(m_pBrush);
+		SAFE_RELEASE(m_pBlackBrush);
 		SAFE_RELEASE(m_pRenderTarget);
 		SAFE_RELEASE(m_pD2DFactory);
 		SAFE_RELEASE(m_pWICFactory);
 		SAFE_RELEASE(m_pDWriteFactory);
 		SAFE_RELEASE(m_pDWriteTextFormat);
+		SAFE_RELEASE(m_pDWriteTextFormats);
 		SAFE_RELEASE(m_pDXGIFactory);
 		SAFE_RELEASE(m_pDXGIAdapter);
 		CoUninitialize();
@@ -163,6 +177,18 @@
 			m_pBrush
 		);
 
+	}
+
+	void D2DEngine::DrawTextChat(const wchar_t* text, float left, float right, float top, float bottom)
+	{
+		m_pRenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
+		m_pRenderTarget->DrawTextW(
+			text,
+			wcslen(text),
+			m_pDWriteTextFormats,
+			D2D1::RectF(left, top, right, bottom),
+			m_pBlackBrush
+		);
 	}
 
 	HRESULT  D2DEngine::CreateD2DBitmapFromFile(const WCHAR* szFilePath, ID2D1Bitmap** ppID2D1Bitmap)

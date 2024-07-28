@@ -7,6 +7,7 @@ Wall::Wall()
 	m_pCollisionBox->SetCollisionType(CollisionType::Block);
 	m_pCollisionBox->SetParent(m_pAnimationScene);
 	SetRootScene(m_pAnimationScene);
+	m_pCollisionBox->notify = notify;
 }
 
 Wall::~Wall()

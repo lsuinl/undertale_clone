@@ -4,7 +4,7 @@ class Title:public World
 {
 public:
 	bool start = false;
-	float PressTime = 0.f, limitTime = 0.1f;
+	float PressTime = 0.f, limitTime = 3.0f;
 	Title();
 	~Title();
 	virtual void Update(float deltaTime);

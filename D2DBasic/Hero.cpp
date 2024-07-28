@@ -16,7 +16,7 @@ Hero::Hero()
     HeroIdle* Idle = FSMS->CreateState<HeroIdle>("HeroIdle");
     HeroMove* Move = FSMS->CreateState<HeroMove>("HeroMove");
     FSMS->SetOwner(this);
-
+    m_pCollisionBox->notify = notify;
     SetRootScene(m_pAnimationScene);
 }
 
@@ -29,22 +29,22 @@ void Hero::Update(float time) {
     __super::Update(time);
     m_pMovement->SetSpeed(0);
     if (GetAsyncKeyState(VK_UP) & 0x8000) {//위
-        m_pMovement->SetSpeed(200.f);
+        m_pMovement->SetSpeed(500.f);
         m_pMovement->SetDirectionNormalize({ 0, -1 });
         FSMS->m_pCurrState->setForward(1);
     }
     else if (GetAsyncKeyState(VK_DOWN) & 0x8000) {//아래
-        m_pMovement->SetSpeed(200.f);
+        m_pMovement->SetSpeed(500.f);
         m_pMovement->SetDirectionNormalize({ 0, 1 });
         FSMS->m_pCurrState->setForward(2);
     }
     else if (GetAsyncKeyState(VK_LEFT) & 0x8000) {//왼쪽
-        m_pMovement->SetSpeed(200.f);
+        m_pMovement->SetSpeed(500.f);
         m_pMovement->SetDirectionNormalize({ -1, 0 });
         FSMS->m_pCurrState->setForward(3);
     }
     else if (GetAsyncKeyState(VK_RIGHT) & 0x8000) {//오른쪽
-        m_pMovement->SetSpeed(200.f);
+        m_pMovement->SetSpeed(500.f);
         m_pMovement->SetDirectionNormalize({ 1, 0 });
         FSMS->m_pCurrState->setForward(4);
     }

@@ -3,7 +3,6 @@
 
 void Text::ReadFile(std::wstring fileName)
 {
-	SoundManager::GetInstance()->LoadMusic(eSoundList::typeing, true, "../Resource/music/effect/typeing.mp3");
 	std::wifstream file(fileName);
 	file.imbue(std::locale("en_US.UTF-8"));
 
@@ -18,7 +17,8 @@ void Text::ReadFile(std::wstring fileName)
 	}
 	name = fileName;
 	length = textList.size();
-	SoundManager::GetInstance()->PlayMusic(eSoundList::typeing, eSoundChannel::Effect);
+	SoundManager::GetInstance()->PlayMusic(eSoundList::typeing, eSoundChannel::typing);
+	isEnd = false;
 }
 
 void Text::PlayText()
@@ -34,26 +34,31 @@ std::wstring Text::GetText() {
 
 void Text::NextText()
 {
-	if (text == textList[index] && length != index) {
-
-		index++;
+	if (index < textList.size()&&GetIsSentenceEnd() && length != index) {
 		text = L"";
+		index++;
+		if (index == textList.size()) {
+			isEnd = true;
+			return;
+		}
+		SoundManager::GetInstance()->PlayMusic(eSoundList::typeing, eSoundChannel::typing);
 	}
 }
 
 void Text::Update(float deltaTime)
 {
-	time += deltaTime;
-	if (text == textList[index]) { //시간지나면 자동 이동
-		SoundManager::GetInstance()->StopMusic(eSoundChannel::Effect);
-		if (time > 3.0f) {
-			SoundManager::GetInstance()->PlayMusic(eSoundList::typeing, eSoundChannel::Effect);
-			NextText();
-			time = 0;
+	if (!isEnd) {
+		time += deltaTime;
+		if (GetIsSentenceEnd()) {
+			SoundManager::GetInstance()->StopMusic(eSoundChannel::typing);
+			if (time > 3.0f&&timeout) { //시간지나면 자동 이동
+				NextText();
+				time = 0;
+			}
 		}
-	}
-	else if (time > 0.1f) { //출력하기
-		time = 0;
-		PlayText();
+		else if (time > 0.1f) { //출력하기
+			time = 0;
+			PlayText();
+		}
 	}
 }

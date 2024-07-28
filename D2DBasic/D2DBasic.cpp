@@ -5,7 +5,7 @@
 #include "ResourceManager.h"
 #include "ScreenManager.h"
 #include "Battle.h"
-#include "Resource.h" 
+ 
 D2DBasic::D2DBasic() {
 	m_pRenderer = new D2DEngine;
 	m_pResourceManager = new ResourceManager;
@@ -27,10 +27,14 @@ void D2DBasic::Initialize(HINSTANCE hInstance)
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
 	wc.lpszClassName = L"BasicWindowClass";
-
-	wc.hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_APPICON));
-	wc.hIconSm = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_APPICON));
-	LoadIcon(hInstance, MAKEINTRESOURCE(IDI_APPICON));
+	wc.hIcon = (HICON)LoadImageW(
+		hInstance,       
+		L"../Resource/pixil-frame-0.ico",       
+		IMAGE_ICON,    
+		0,             
+		0,             
+		LR_LOADFROMFILE
+	);
 	// 윈도우 클래스 등록
 	if (!RegisterClassEx(&wc))
 	{

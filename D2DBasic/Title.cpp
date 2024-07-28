@@ -15,8 +15,7 @@ Title::Title()
 	m_Background.back()->destinationRect = D2D1::RectF(350, 400, 650, 500.f);
 	m_Background.back()->sourceRect = D2D1::RectF(0, 0, 0, 0);
 
-  	SoundManager::GetInstance()->LoadMusic(eSoundList::Title, true, "../Resource/music/effect/title.mp3");
-	SoundManager::GetInstance()->PlayMusic(eSoundList::Title, eSoundChannel::BGM);
+	SoundManager::GetInstance()->PlayMusic(eSoundList::TitleEffect, eSoundChannel::BGM);
 }
 
 Title::~Title()
@@ -29,7 +28,7 @@ void Title::Update(float deltaTime)
 	PressTime += deltaTime;
 	if (PressTime > limitTime && !start) { //º¯°æ
 		start = true;
-		SoundManager::GetInstance()->LoadMusic(eSoundList::Title, true, "../Resource/music/bgm/title.mp3");
+
 		SoundManager::GetInstance()->PlayMusic(eSoundList::Title, eSoundChannel::BGM);
 		m_Background.back()->sourceRect = D2D1::RectF(0, 0, 287, 49);
 	}
@@ -37,7 +36,6 @@ void Title::Update(float deltaTime)
 	if(start && ((GetAsyncKeyState(VK_SPACE) & 0x8000) || (GetAsyncKeyState(VK_RETURN) & 0x8000))) {
 		SoundManager::GetInstance()->StopMusic(eSoundChannel::BGM);
 		ScreenManager::pInstanc->CreateWorld<snowMap>();
-		ScreenManager::pInstanc->LoadWorld(2);
 	}
 }
 

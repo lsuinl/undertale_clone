@@ -1,4 +1,5 @@
 .pdb
+.vs
 .ipch
 x64/Debug/XYGame.pdb
 .vs/DemoGame/v17/ipch/AutoPCH/1b04b5c4b2d51450/FSMSTATE.ipch

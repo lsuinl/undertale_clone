@@ -162,9 +162,6 @@
     <ClCompile Include="ScreenManager.cpp">
       <Filter>소스 파일\screen</Filter>
     </ClCompile>
-    <ClCompile Include="Text.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Hero.cpp">
       <Filter>소스 파일\obj</Filter>
     </ClCompile>
@@ -176,6 +173,27 @@
     </ClCompile>
     <ClCompile Include="HeroMove.cpp">
       <Filter>소스 파일\states</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterHandler.cpp">
+      <Filter>소스 파일\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterHandler.cpp">
+      <Filter>소스 파일\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="WallHandler.cpp">
+      <Filter>소스 파일\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>소스 파일\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>소스 파일\help</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroHandler.cpp">
+      <Filter>소스 파일\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCHandler.cpp">
+      <Filter>소스 파일\obj</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -293,9 +311,6 @@
     <ClInclude Include="ScreenManager.h">
       <Filter>헤더 파일\screen</Filter>
     </ClInclude>
-    <ClInclude Include="Text.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Hero.h">
       <Filter>헤더 파일\obj</Filter>
     </ClInclude>
@@ -308,18 +323,26 @@
     <ClInclude Include="HeroMove.h">
       <Filter>헤더 파일\states</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="MonsterHandler.h">
+      <Filter>헤더 파일\obj</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\Resource\pixil-frame-0.ico">
-      <Filter>리소스 파일</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="D2DBasic.rc">
-      <Filter>리소스 파일</Filter>
-    </ResourceCompile>
+    <ClInclude Include="CharacterHandler.h">
+      <Filter>헤더 파일\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="WallHandler.h">
+      <Filter>헤더 파일\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
+      <Filter>헤더 파일\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>헤더 파일\help</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCHandler.h">
+      <Filter>헤더 파일\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroHandler.h">
+      <Filter>헤더 파일\obj</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

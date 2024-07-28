@@ -8,12 +8,18 @@ XYSystem::~XYSystem() {}
 void XYSystem::Initialize(HINSTANCE hInstance)
 {
 	__super::Initialize(hInstance);
+	//ScreenManager::pInstanc->CreateWorld<Story>(); //이게진짜
+	SoundManager::GetInstance()->LoadMusic(eSoundList::typeing, true, "../Resource/music/effect/typeing.mp3");
+	SoundManager::GetInstance()->LoadMusic(eSoundList::GameOver, false, "../Resource/music/bgm/gameover.mp3");
+	SoundManager::GetInstance()->LoadMusic(eSoundList::TitleEffect, true, "../Resource/music/effect/title.mp3");
+	SoundManager::GetInstance()->LoadMusic(eSoundList::Title, true, "../Resource/music/bgm/title.mp3");
+	SoundManager::GetInstance()->LoadMusic(eSoundList::Story, true, "../Resource/music/bgm/story.mp3");
+	SoundManager::GetInstance()->LoadMusic(eSoundList::Death, false, "../Resource/music/effect/death.mp3");
+	SoundManager::GetInstance()->LoadMusic(eSoundList::snowMap, true, "../Resource/music/bgm/map.mp3");
+	SoundManager::GetInstance()->LoadMusic(eSoundList::Attack, false, "../Resource/music/effect/damege.mp3");
+	SoundManager::GetInstance()->LoadMusic(eSoundList::Battle, true, "../Resource/music/bgm/fight.mp3");
+	SoundManager::GetInstance()->SetVolume(2.0f, 1);
 	ScreenManager::pInstanc->CreateWorld<Story>();
-
-	//ScreenManager::pInstanc->CreateWorld<Battle>();
-	//ScreenManager::pInstanc->CreateWorld<GameOver>();
-	//ScreenManager::pInstanc->CreateWorld<Ending>();
-	ScreenManager::pInstanc->LoadWorld(0);
 }
 void XYSystem::Update(float times)
 {

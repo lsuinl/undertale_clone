@@ -5,18 +5,20 @@
 #include "FSMState.h"
 #include "FiniteStateMachine.h"
 #include "BoxCollider.h"
+#include "Collider.h"
+#include "MonsterHandler.h"
 
-class AnimationScene;
-class Movement;
-class Monster :public GameObject
+class Monster : public GameObject
 {
 public:
-	Monster();
-	virtual ~Monster();
-	GameObject* target;
-	Movement* m_pMovement =nullptr;
-	BoxCollider* m_pCollisionBox = nullptr;
+    Monster();
+    virtual ~Monster();
+    MonsterHandler* notify= new MonsterHandler(this);
+    GameObject* target;
+    Movement* m_pMovement = nullptr;
+    BoxCollider* m_pCollisionBox = nullptr;
 
-	virtual void Update(float time) override;
+    virtual void Update(float time) override;
+    virtual void Render(D2DEngine* pRenderTarget) override;
 };
 

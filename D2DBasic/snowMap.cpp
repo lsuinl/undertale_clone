@@ -19,11 +19,18 @@ snowMap::snowMap()
  	ani->LoadAnimationAsset(L"../Resource/charcacter/player.png", L"../Resource/csv/heroidleside.csv");
  	ani->LoadAnimationAsset(L"../Resource/charcacter/player.png", L"../Resource/csv/heroidleback.csv");
 	ani->m_RelativeScale = { 3,3 };
-	//시작 좌표만 바꾸기
-	ani->m_size = { 127,110 }; ani->m_RelativeLocation = { 510,2970 }; ani->SetAnimation(10, false);
-
-	SoundManager::GetInstance()->LoadMusic(eSoundList::snowMap, true, "../Resource/music/bgm/map.mp3");
+	ani->m_center = { ani->m_center.x,ani->m_center.y + 30 };
+	ani->m_size = { 60,30 }; ani->m_RelativeLocation = { 510,2970 }; ani->SetAnimation(10, false);
 	SoundManager::GetInstance()->PlayMusic(eSoundList::snowMap, eSoundChannel::BGM);
+
+	//npc1
+	CreateGameObject<NPC>();
+	ani = dynamic_cast<AnimationScene*>(m_GameObjects.back()->m_pRootScene);
+	ResourceManager::pInstance->CreateD2DBitmapFromFile(L"../Resource/charcacter/player.png", &ani->m_pBitmap);
+	ani->LoadAnimationAsset(L"../Resource/charcacter/player.png", L"../Resource/csv/herorun.csv");
+	ani->m_RelativeScale = { 3,3 };
+	ani->m_center = { ani->m_center.x,ani->m_center.y + 30 };
+	ani->m_size = { 60,30 }; ani->m_RelativeLocation = { 1010,2970 }; ani->SetAnimation(10, false);
 }
 
 snowMap::~snowMap()

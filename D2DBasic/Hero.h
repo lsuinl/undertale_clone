@@ -4,7 +4,7 @@
 #include "CameraScene.h"
 #include "BoxCollider.h"
 #include "FiniteStateMachine.h"
-
+#include "HeroHandler.h"
 class AnimationScene;
 class Movement;
 class Hero :public GameObject
@@ -15,6 +15,7 @@ public:
 	virtual ~Hero();
 	CameraScene* Camera;
 	Movement* m_pMovement = nullptr;
+	HeroHandler* notify = new HeroHandler(this);
 	
 	FiniteStateMachine* FSMS;
 	BoxCollider* m_pCollisionBox = nullptr;

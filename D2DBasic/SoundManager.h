@@ -10,17 +10,23 @@ using namespace FMOD;
     {
         BGM,
         Effect,
+        typing,
         Size
     };
 
     enum class eSoundList
     {
-        click,
         Title,
         Story,
+        Battle,
         snowMap,
         ending,
+        GameOver,
         //¿Ã∆Â∆Æ,
+        TitleEffect,
+        click,
+        Attack,
+        Death,
         typeing,
         Size
     };

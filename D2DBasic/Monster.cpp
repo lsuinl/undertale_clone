@@ -13,7 +13,7 @@ Monster::Monster()
 	m_pCollisionBox = CreateComponent<BoxCollider>();
 	m_pCollisionBox->SetParent(m_pAnimationScene);
 	m_pCollisionBox->SetCollisionType(CollisionType::Overlap);
-	
+	m_pCollisionBox->notify = notify;
 	SetRootScene(m_pAnimationScene);
 }
 
@@ -28,4 +28,9 @@ void Monster::Update(float time) {
 	m_pMovement->SetDirectionNormalize({ 1, 0 });
 	m_pMovement->SetSpeed(100.f);
 	__super::Update(time);
+}
+
+void Monster::Render(D2DEngine* pRenderTarget)
+{
+	__super::Render(pRenderTarget);
 }

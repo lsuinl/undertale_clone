@@ -7,6 +7,7 @@
 #include "../D2DBasic/snowMap.h"
 #include "../D2DBasic/Story.h"
 #include "../D2DBasic/Title.h"
+#include "../D2DBasic/SoundManager.h"
 
 class XYSystem : public D2DBasic
 {

@@ -7,6 +7,7 @@ C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\BitmapScene.cpp;C:\Users
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\BoxCollider.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\BoxCollider.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\CameraScene.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\CameraScene.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Character.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Character.obj
+C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\CharacterHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\CharacterHandler.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\CircleComponent.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\CircleComponent.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Collider.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Collider.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Component.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Component.obj
@@ -19,12 +20,16 @@ C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\GameObject.cpp;C:\Users\
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\GameOver.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\GameOver.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Helper.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Helper.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Hero.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Hero.obj
+C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\HeroHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\HeroHandler.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\HeroIdle.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\HeroIdle.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\HeroMove.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\HeroMove.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Idle.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Idle.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\MathHelper.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\MathHelper.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Monster.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Monster.obj
+C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\MonsterHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\MonsterHandler.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Movement.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Movement.obj
+C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\NPC.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\NPC.obj
+C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\NPCHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\NPCHandler.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\pch.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\pch.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\ReferenceCounter.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\ReferenceCounter.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\RenderScene.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\RenderScene.obj
@@ -39,4 +44,5 @@ C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Text.cpp;C:\Users\User\D
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\TimeSystem.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\TimeSystem.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Title.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Title.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\wall.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\wall.obj
+C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\WallHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\WallHandler.obj
 C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\World.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\World.obj
