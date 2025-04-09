@@ -22,6 +22,7 @@ void FiniteStateMachine::Update(float DeltaTime)
 		{
 			m_pCurrState->Exit();
 		}
+		m_pNextState->setForward(m_pCurrState->getForward());
 		m_pCurrState = m_pNextState;
 		m_pCurrState->Enter();
 	}

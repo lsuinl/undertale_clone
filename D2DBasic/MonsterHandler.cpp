@@ -11,8 +11,10 @@ void MonsterHandler::OnBeginOverlap(Collider* pOwnedComponent, Collider* pOtherC
 {
 	m_pOwner->m_pCollisionBox->isColli = true;
 	CharacterHandler* character = dynamic_cast<CharacterHandler*>(pOtherComponent->notify);
-	if (character) 
+	if (character) {
 		m_pOwner->m_pRootScene->m_RelativeScale = { 0,0 };
+		m_pOwner->m_pRootScene->m_size = { 0,0 };
+	}
 }
 
 void MonsterHandler::OnEndOverlap(Collider* pOwnedComponent, Collider* pOtherComponent)

@@ -10,16 +10,18 @@ class Character :public GameObject
 {
 public:
 	bool death = false;
-
+	static int HP;
 	Character();
 	virtual ~Character();
-	int HP=40;
+
+	BitmapScene* hp = new BitmapScene();
+	BitmapScene* hpback = new BitmapScene();
+
 	CameraScene* Camera;
 	FiniteStateMachine* FSMS;
 	BoxCollider* m_pCollisionBox = nullptr;
 	Movement* m_pMovement = nullptr;
 	CharacterHandler* notify= new CharacterHandler(this);
-	int GetHP() { return HP; }
 	void Damage(int n);
 	virtual void Update(float time) override;
 	virtual void Render(D2DEngine* pRenderTarget) override;

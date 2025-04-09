@@ -12,4 +12,3 @@ public:
 	virtual void Update(float deltaTime);
 	virtual void Render(D2DEngine* pRenderTarget);
 };
-

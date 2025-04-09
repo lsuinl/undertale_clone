@@ -20,13 +20,15 @@ using namespace FMOD;
         Story,
         Battle,
         snowMap,
-        ending,
+        Ending,
         GameOver,
         //이펙트,
+        BattleStart,
         TitleEffect,
         click,
         Attack,
         Death,
+        //타이핑사운드
         typeing,
         Size
     };

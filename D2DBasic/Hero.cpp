@@ -28,31 +28,35 @@ Hero::~Hero()
 void Hero::Update(float time) {
     __super::Update(time);
     m_pMovement->SetSpeed(0);
-    if (GetAsyncKeyState(VK_UP) & 0x8000) {//위
-        m_pMovement->SetSpeed(500.f);
-        m_pMovement->SetDirectionNormalize({ 0, -1 });
-        FSMS->m_pCurrState->setForward(1);
-    }
-    else if (GetAsyncKeyState(VK_DOWN) & 0x8000) {//아래
-        m_pMovement->SetSpeed(500.f);
-        m_pMovement->SetDirectionNormalize({ 0, 1 });
-        FSMS->m_pCurrState->setForward(2);
-    }
-    else if (GetAsyncKeyState(VK_LEFT) & 0x8000) {//왼쪽
-        m_pMovement->SetSpeed(500.f);
-        m_pMovement->SetDirectionNormalize({ -1, 0 });
-        FSMS->m_pCurrState->setForward(3);
-    }
-    else if (GetAsyncKeyState(VK_RIGHT) & 0x8000) {//오른쪽
-        m_pMovement->SetSpeed(500.f);
-        m_pMovement->SetDirectionNormalize({ 1, 0 });
-        FSMS->m_pCurrState->setForward(4);
+    if (!isTalk) {
+        if (GetAsyncKeyState(VK_UP) & 0x8000) {//위
+            m_pMovement->SetSpeed(500.f);
+            m_pMovement->SetDirectionNormalize({ 0, -1 });
+            FSMS->m_pCurrState->setForward(1);
+        }
+        else if (GetAsyncKeyState(VK_DOWN) & 0x8000) {//아래
+            m_pMovement->SetSpeed(500.f);
+            m_pMovement->SetDirectionNormalize({ 0, 1 });
+            FSMS->m_pCurrState->setForward(2);
+        }
+        else if (GetAsyncKeyState(VK_LEFT) & 0x8000) {//왼쪽
+            m_pMovement->SetSpeed(500.f);
+            m_pMovement->SetDirectionNormalize({ -1, 0 });
+            FSMS->m_pCurrState->setForward(3);
+        }
+        else if (GetAsyncKeyState(VK_RIGHT) & 0x8000) {//오른쪽
+            m_pMovement->SetSpeed(500.f);
+            m_pMovement->SetDirectionNormalize({ 1, 0 });
+            FSMS->m_pCurrState->setForward(4);
+        }
     }
 
-    if (m_pMovement->GetSpeed() == 0) 
+    if (m_pMovement->GetSpeed() == 0) {
         FSMS->m_pNextState = FSMS->m_pStates["HeroIdle"];
-    else 
+    }
+    else {
         FSMS->m_pNextState = FSMS->m_pStates["HeroMove"];
+    }
 
     int dx = Camera->m_ViewBoundBox.m_Extent.x, dy = Camera->m_ViewBoundBox.m_Extent.y;
     float fixX;

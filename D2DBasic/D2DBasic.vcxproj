@@ -132,6 +132,7 @@
     <ClCompile Include="AnimationScene.cpp" />
     <ClCompile Include="Attack.cpp" />
     <ClCompile Include="Battle.cpp" />
+    <ClCompile Include="BattleUI.cpp" />
     <ClCompile Include="BitmapScene.cpp" />
     <ClCompile Include="BoxCollider.cpp" />
     <ClCompile Include="CameraScene.cpp" />
@@ -153,6 +154,7 @@
     <ClCompile Include="HeroIdle.cpp" />
     <ClCompile Include="HeroMove.cpp" />
     <ClCompile Include="Idle.cpp" />
+    <ClCompile Include="Kid.cpp" />
     <ClCompile Include="MathHelper.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="MonsterHandler.cpp" />
@@ -182,6 +184,7 @@
     <ClInclude Include="AnimationScene.h" />
     <ClInclude Include="Attack.h" />
     <ClInclude Include="Battle.h" />
+    <ClInclude Include="BattleUI.h" />
     <ClInclude Include="BitmapScene.h" />
     <ClInclude Include="BoxCollider.h" />
     <ClInclude Include="CameraScene.h" />
@@ -204,6 +207,7 @@
     <ClInclude Include="HeroIdle.h" />
     <ClInclude Include="HeroMove.h" />
     <ClInclude Include="Idle.h" />
+    <ClInclude Include="Kid.h" />
     <ClInclude Include="MathHelper.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="MonsterHandler.h" />

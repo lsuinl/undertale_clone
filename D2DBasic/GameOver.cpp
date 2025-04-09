@@ -23,6 +23,7 @@ void GameOver::Update(float deltaTime)
 		if (((GetAsyncKeyState(VK_SPACE) & 0x8000) || (GetAsyncKeyState(VK_RETURN) & 0x8000))) {
 			SoundManager::GetInstance()->StopMusic(eSoundChannel::BGM);
 			SoundManager::GetInstance()->StopMusic(eSoundChannel::Effect);
+			SoundManager::GetInstance()->StopMusic(eSoundChannel::typing);
 			ScreenManager::pInstanc->CreateWorld<Title>();
 		}
 	}

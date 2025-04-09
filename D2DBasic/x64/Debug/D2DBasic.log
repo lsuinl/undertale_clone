@@ -1,1 +1,101 @@
-﻿  D2DBasic.vcxproj -> C:\Users\User\Documents\GitHub\undertale_clone\x64\Debug\D2DBasic.lib
+﻿  AABB.cpp
+  AnimationAsset.cpp
+  AnimationScene.cpp
+  Attack.cpp
+  Battle.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.h(10,38): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 'Battle.cpp'을(를) 컴파일하는 중)
+  
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(127,27): warning C4305: '초기화 중': 'double'에서 'FLOAT'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(127,31): warning C4305: '초기화 중': 'double'에서 'FLOAT'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(143,16): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(146,14): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(152,16): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(160,13): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(161,16): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(178,16): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(183,14): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(191,14): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(197,14): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(205,14): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(216,16): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp(219,13): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  BattleUI.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.h(10,38): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 'BattleUI.cpp'을(를) 컴파일하는 중)
+  
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\BattleUI.cpp(76,7): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\BattleUI.cpp(75,6): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\BattleUI.cpp(74,6): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  BitmapScene.cpp
+  BoxCollider.cpp
+  CameraScene.cpp
+  Character.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Character.cpp(29,57): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Character.cpp(48,60): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CharacterHandler.cpp
+  CircleComponent.cpp
+  Collider.cpp
+  Component.cpp
+  D2DBasic.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.h(10,38): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 'D2DBasic.cpp'을(를) 컴파일하는 중)
+  
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DBasic.cpp(92,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  D2DEngine.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DEngine.cpp(148,34): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DEngine.cpp(148,27): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DEngine.cpp(148,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DEngine.cpp(148,16): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DEngine.cpp(161,10): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DEngine.cpp(174,10): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DEngine.cpp(187,10): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Ending.cpp
+  FiniteStateMachine.cpp
+  FSMState.cpp
+  GameObject.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  GameOver.cpp
+  Helper.cpp
+  Hero.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Hero.cpp(61,12): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Hero.cpp(61,52): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  HeroHandler.cpp
+  HeroIdle.cpp
+  HeroMove.cpp
+  Idle.cpp
+  Kid.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Kid.cpp(12,35): warning C4305: '초기화 중': 'double'에서 'FLOAT'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Kid.cpp(12,39): warning C4305: '초기화 중': 'double'에서 'FLOAT'(으)로 잘립니다.
+  MathHelper.cpp
+  Monster.cpp
+  MonsterHandler.cpp
+  Movement.cpp
+  NPC.cpp
+  NPCHandler.cpp
+  pch.cpp
+  ReferenceCounter.cpp
+  RenderScene.cpp
+  ResourceManager.cpp
+  Death.cpp
+  Scene.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  ScreenManager.cpp
+  snowMap.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\snowMap.cpp(19,111): warning C4305: '초기화 중': 'double'에서 'FLOAT'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\snowMap.cpp(19,115): warning C4305: '초기화 중': 'double'에서 'FLOAT'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\snowMap.cpp(48,27): warning C4305: '초기화 중': 'double'에서 'FLOAT'(으)로 잘립니다.
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\snowMap.cpp(48,31): warning C4305: '초기화 중': 'double'에서 'FLOAT'(으)로 잘립니다.
+  SoundManager.cpp
+  Story.cpp
+  Text.cpp
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Text.cpp(19,24): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TimeSystem.cpp
+  Title.cpp
+  wall.cpp
+  WallHandler.cpp
+  World.cpp
+  코드를 생성하고 있습니다...
+  D2DBasic.vcxproj -> D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\x64\Debug\D2DBasic.lib

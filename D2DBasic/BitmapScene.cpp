@@ -20,8 +20,6 @@ bool BitmapScene::Load(const std::wstring& strFileName)
 
 void BitmapScene::Update(float fTimeElapsed)
 {
-	UpdateTrasnform();
-	m_RelativeRotation = fTimeElapsed;
 }
 
 void BitmapScene::Render(D2DEngine* pRenderTarget)

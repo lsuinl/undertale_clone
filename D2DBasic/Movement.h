@@ -21,6 +21,7 @@ public:
 	virtual void Update(float deltaTime);
 	void SetBlock() { isBlock = true; }
 	void SetSceneComponent(Scene* val) { m_pSceneComponent = val; }
+	Scene* GetSceneComponent() { return m_pSceneComponent; }
 	void SetSpeed(float speed) { m_Speed = speed; };
 	float GetSpeed() { return m_Speed; };
 	void SetDistance(const MathHelper::Vector2F& Direction);

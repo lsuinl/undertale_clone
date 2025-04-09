@@ -17,6 +17,7 @@ public:
     GameObject* target;
     Movement* m_pMovement = nullptr;
     BoxCollider* m_pCollisionBox = nullptr;
+    float times=0;
 
     virtual void Update(float time) override;
     virtual void Render(D2DEngine* pRenderTarget) override;

@@ -1,7 +1,6 @@
 #pragma once
 #include "pch.h"
 #include "World.h"
-
 class ScreenManager
 {
 public:
@@ -20,6 +19,5 @@ public:
 		curWorld = newWorld;
 		return newWorld;
 	}
-//	void LoadWorld(int index) { curWorld = worlds[index]; };
 };
 

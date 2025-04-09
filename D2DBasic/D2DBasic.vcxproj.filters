@@ -195,6 +195,12 @@
     <ClCompile Include="NPCHandler.cpp">
       <Filter>소스 파일\obj</Filter>
     </ClCompile>
+    <ClCompile Include="BattleUI.cpp">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Kid.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D2DEngine.h">
@@ -343,6 +349,12 @@
     </ClInclude>
     <ClInclude Include="HeroHandler.h">
       <Filter>헤더 파일\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleUI.h">
+      <Filter>헤더 파일\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Kid.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

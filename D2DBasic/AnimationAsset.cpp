@@ -15,7 +15,7 @@ bool AnimationAsset::LoadAnimation(std::wstring FilePath)
 		LoadAnimationFromCSV(3, FilePath.c_str());
 	else if (FilePath == std::wstring(L"../Resource/csv/death.csv"))//하트 죽음.
 		LoadAnimationFromCSV(4, FilePath.c_str());
-	else if (FilePath == std::wstring(L"../Resource/kenmove.csv")) //적1 공격
+	else if (FilePath == std::wstring(L"../Resource/csv/patten1.csv")) //적1 공격
 		LoadAnimationFromCSV(5, FilePath.c_str());
 	else if (FilePath == std::wstring(L"../Resource/introduction.csv")) //스토리 배경
 		LoadAnimationFromCSV(6, FilePath.c_str());
@@ -34,6 +34,42 @@ bool AnimationAsset::LoadAnimation(std::wstring FilePath)
 		LoadAnimationFromCSV(12, FilePath.c_str());
 	else if (FilePath == std::wstring(L"../Resource/csv/heroidleback.csv")) //캐릭터 가만히 (뒤)
 		LoadAnimationFromCSV(13, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/battlestart.csv")) //전투 시작 액션
+		LoadAnimationFromCSV(14, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/rabit1.csv")) //토끼1
+		LoadAnimationFromCSV(15, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/rabit2.csv")) //토끼2
+		LoadAnimationFromCSV(16, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/bluebear.csv")) //파란곰
+		LoadAnimationFromCSV(17, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/brownbear.csv")) //갈색곰
+		LoadAnimationFromCSV(18, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/mouse.csv")) //생쥐
+		LoadAnimationFromCSV(19, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/orange.csv")) //주황몬스터
+		LoadAnimationFromCSV(20, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/kid.csv")) //kid
+		LoadAnimationFromCSV(21, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/box.csv")) //상자
+		LoadAnimationFromCSV(22, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/save.csv")) //저장
+		LoadAnimationFromCSV(23, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/dog.csv")) //개
+		LoadAnimationFromCSV(24, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/ghost.csv")) //귀신
+		LoadAnimationFromCSV(25, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/temmie.csv")) //테미
+		LoadAnimationFromCSV(26, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/sense.csv")) //샌즈
+		LoadAnimationFromCSV(27, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/patten2.csv")) //적2 공격
+		LoadAnimationFromCSV(28, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/patten3.csv")) //적3 공격
+		LoadAnimationFromCSV(29, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/patten4.csv")) //적4 공격
+		LoadAnimationFromCSV(30, FilePath.c_str());
+	else if (FilePath == std::wstring(L"../Resource/csv/patten5.csv")) //적5 공격
+		LoadAnimationFromCSV(31, FilePath.c_str());
 	return true;
 }
 

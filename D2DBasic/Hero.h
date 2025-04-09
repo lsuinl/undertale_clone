@@ -11,6 +11,7 @@ class Hero :public GameObject
 {
 	float fixY = 2970.0f;
 public:
+	static bool isTalk;
 	Hero();
 	virtual ~Hero();
 	CameraScene* Camera;

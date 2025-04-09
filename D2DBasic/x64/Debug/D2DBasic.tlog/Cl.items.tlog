@@ -1,48 +1,50 @@
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\AABB.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\AABB.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\AnimationAsset.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\AnimationAsset.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\AnimationScene.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\AnimationScene.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Attack.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Attack.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Battle.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Battle.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\BitmapScene.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\BitmapScene.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\BoxCollider.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\BoxCollider.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\CameraScene.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\CameraScene.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Character.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Character.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\CharacterHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\CharacterHandler.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\CircleComponent.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\CircleComponent.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Collider.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Collider.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Component.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Component.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\D2DBasic.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\D2DBasic.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\D2DEngine.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\D2DEngine.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Ending.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Ending.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\FiniteStateMachine.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\FiniteStateMachine.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\FSMState.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\FSMState.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\GameObject.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\GameObject.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\GameOver.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\GameOver.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Helper.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Helper.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Hero.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Hero.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\HeroHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\HeroHandler.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\HeroIdle.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\HeroIdle.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\HeroMove.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\HeroMove.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Idle.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Idle.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\MathHelper.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\MathHelper.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Monster.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Monster.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\MonsterHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\MonsterHandler.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Movement.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Movement.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\NPC.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\NPC.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\NPCHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\NPCHandler.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\pch.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\pch.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\ReferenceCounter.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\ReferenceCounter.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\RenderScene.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\RenderScene.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\ResourceManager.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\ResourceManager.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Death.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Death.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Scene.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Scene.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\ScreenManager.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\ScreenManager.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\snowMap.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\snowMap.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\SoundManager.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\SoundManager.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Story.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Story.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Text.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Text.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\TimeSystem.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\TimeSystem.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\Title.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\Title.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\wall.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\wall.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\WallHandler.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\WallHandler.obj
-C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\World.cpp;C:\Users\User\Documents\GitHub\undertale_clone\D2DBasic\x64\Debug\World.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\AABB.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\AABB.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\AnimationAsset.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\AnimationAsset.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\AnimationScene.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\AnimationScene.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Attack.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Attack.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Battle.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Battle.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\BattleUI.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\BattleUI.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\BitmapScene.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\BitmapScene.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\BoxCollider.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\BoxCollider.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\CameraScene.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\CameraScene.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Character.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Character.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\CharacterHandler.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\CharacterHandler.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\CircleComponent.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\CircleComponent.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Collider.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Collider.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Component.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Component.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DBasic.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\D2DBasic.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\D2DEngine.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\D2DEngine.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Ending.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Ending.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\FiniteStateMachine.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\FiniteStateMachine.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\FSMState.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\FSMState.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\GameObject.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\GameObject.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\GameOver.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\GameOver.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Helper.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Helper.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Hero.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Hero.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\HeroHandler.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\HeroHandler.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\HeroIdle.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\HeroIdle.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\HeroMove.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\HeroMove.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Idle.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Idle.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Kid.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Kid.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\MathHelper.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\MathHelper.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Monster.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Monster.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\MonsterHandler.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\MonsterHandler.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Movement.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Movement.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\NPC.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\NPC.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\NPCHandler.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\NPCHandler.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\pch.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\pch.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\ReferenceCounter.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\ReferenceCounter.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\RenderScene.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\RenderScene.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\ResourceManager.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\ResourceManager.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Death.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Death.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Scene.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Scene.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\ScreenManager.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\ScreenManager.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\snowMap.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\snowMap.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\SoundManager.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\SoundManager.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Story.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Story.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Text.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Text.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\TimeSystem.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\TimeSystem.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\Title.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\Title.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\wall.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\wall.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\WallHandler.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\WallHandler.obj
+D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\World.cpp;D:\2\2학기\D2D 개인프로젝트\김수인\undertale_clone\D2DBasic\x64\Debug\World.obj

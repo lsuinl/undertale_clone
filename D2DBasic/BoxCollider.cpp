@@ -3,10 +3,10 @@
 
 void BoxCollider::Render(D2DEngine* d2d)
 {
-	 if(false) {
+	if(false) {
 		ID2D1SolidColorBrush* m_pBrush;
-		d2d->GetRenderTarget()->SetTransform(D2D1::Matrix3x2F::Identity());
-		d2d->GetRenderTarget()->CreateSolidColorBrush(D2D1::ColorF(D2D1::ColorF::Black), &m_pBrush);
+		d2d->GetRenderTarget()->SetTransform(D2D1::Matrix3x2F::Identity()* d2d->m_CameraTransform);
+		d2d->GetRenderTarget()->CreateSolidColorBrush(D2D1::ColorF(D2D1::ColorF::White), &m_pBrush);
 		d2d->GetRenderTarget()->DrawRectangle(
 			D2D1::RectF(m_Collider.GetMinX(), m_Collider.GetMinY(), m_Collider.GetMaxX(), m_Collider.GetMaxY()), m_pBrush);
 	}

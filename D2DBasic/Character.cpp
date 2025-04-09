@@ -3,6 +3,7 @@
 #include "Attack.h"
 #include "Idle.h"
 #include "Death.h"
+int Character::HP;
 Character::Character()
 {
 	AnimationScene* m_pAnimationScene = CreateComponent<AnimationScene>();
@@ -20,6 +21,13 @@ Character::Character()
     FSMS->SetOwner(this);
     m_pCollisionBox->notify = notify;
     SetRootScene(m_pAnimationScene);
+    //체력바 셋팅
+    ResourceManager::pInstance->CreateD2DBitmapFromFile(L"../Resource/ui/hp.png", &hp->m_pBitmap);
+    hp->destinationRect = D2D1::RectF(400, 600, 550, 660);
+    hp->sourceRect = D2D1::RectF(0, 0.f, 1080, 960.f);
+    ResourceManager::pInstance->CreateD2DBitmapFromFile(L"../Resource/ui/fullhp.png", &hpback->m_pBitmap);
+    hpback->destinationRect = D2D1::RectF(400, 600, 550 + (HP * 5), 660);
+    hpback->sourceRect = D2D1::RectF(0, 0.f, 1080, 960.f);
 }
 
 Character::~Character()
@@ -31,9 +39,13 @@ void Character::Damage(int n)
 {
    IdleState* idle = dynamic_cast<IdleState*>(FSMS->m_pCurrState);
    if (idle) {
-       HP -= n;
-       HP > 0 ? idle->attack = true : idle->death = true;
-      if(HP <=0) death = true;
+       Character::HP -= n;
+       Character::HP > -30 ? idle->attack = true : idle->death = true;
+       if (Character::HP <= -30) {
+           death = true;
+           Character::HP = -30;
+       }
+       hpback->destinationRect = D2D1::RectF(400, 600, 550 + (HP * 5), 660);
    }
 }
 
@@ -62,4 +74,9 @@ void Character::Update(float time) {
 void Character::Render(D2DEngine* pRenderTarget)
 {
     __super::Render(pRenderTarget);
+    hp->Render(pRenderTarget);
+    hpback->Render(pRenderTarget);
+    pRenderTarget->DrawTextsize(L"HP", 350, 650, 600, 700); //150 -30 ,5
+    pRenderTarget->DrawTextsize((std::to_wstring(30 + Character::HP)+L"/30").c_str(), 550, 750, 600, 700);
+
 }

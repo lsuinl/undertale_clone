@@ -2,6 +2,7 @@
 #include "../D2DBasic/D2DBasic.h"
 #include "../D2DBasic/ScreenManager.h"
 #include "../D2DBasic/Battle.h"
+#include "../D2DBasic/BattleUI.h"
 #include "../D2DBasic/Ending.h"
 #include "../D2DBasic/GameOver.h"
 #include "../D2DBasic/snowMap.h"

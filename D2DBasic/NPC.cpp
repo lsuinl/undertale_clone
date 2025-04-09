@@ -1,8 +1,9 @@
 #include "NPC.h"
 #include "SoundManager.h"
 #include "ResourceManager.h"
-#include "ScreenManager.h"
-#include "Battle.h"
+#include "Hero.h"
+
+bool Hero::isTalk;
 NPC::NPC()
 {
 	AnimationScene* m_pAnimationScene = CreateComponent<AnimationScene>();
@@ -26,13 +27,17 @@ NPC::~NPC()
 
 void NPC::Update(float time)
 {
+	__super::Update(time);
 	inputTime += time;
-	if ((GetAsyncKeyState(VK_SPACE) & 0x8000) || (GetAsyncKeyState(VK_RETURN) & 0x8000)&&inputTime>0.2f) {
+	if (isTalk) text.Update(time);
+	if ((GetAsyncKeyState(VK_SPACE) & 0x8000) || (GetAsyncKeyState(VK_RETURN) & 0x8000)&&inputTime>0.4f) {
 		inputTime = 0.0f;
 		if (talkable && !isTalk) {
-			isTalk = true;
-			SoundManager::GetInstance()->LoadMusic(eSoundList::typeing, false, "../Resource/music/effect/overtexting.mp3");
-			text.ReadFile(L"../Resource/text/kid.txt");
+			isTalk = true; 
+			//캐릭터의 상태 변화.
+			Hero::isTalk = true;
+			SoundManager::GetInstance()->LoadMusic(eSoundList::typeing, false, typesound);
+			text.ReadFile(file);
 			text.SetTimeout(false);
 			//텍스트박스 생성
 			chat = new BitmapScene();
@@ -42,8 +47,6 @@ void NPC::Update(float time)
 		}
 		else if (isTalk) text.NextText();
 	}
-	if (isTalk) text.Update(time);
-	__super::Update(time);
 }
 
 void NPC::Render(D2DEngine* pRenderTarget)
@@ -56,8 +59,9 @@ void NPC::Render(D2DEngine* pRenderTarget)
 		pRenderTarget->DrawTextsize(context.c_str(), 90, 800, 550, 800);
 	}
 	if (text.GetIsEnd()) {//채팅종료
-		ScreenManager::pInstanc->CreateWorld<Battle>();
 		isTalk = false;
+		Hero::isTalk= false;
 		chat = nullptr;
+		//캐릭터의 상태 변화.
 	}
 }

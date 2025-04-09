@@ -8,7 +8,7 @@ void CharacterHandler::OnBlock(Collider* pOwnedComponent, Collider* pOtherCompon
 void CharacterHandler::OnBeginOverlap(Collider* pOwnedComponent, Collider* pOtherComponent)
 {
 	m_pOwner->m_pCollisionBox->isColli = true;
-	m_pOwner->Damage(10);
+	m_pOwner->Damage(7);
 }
 
 void CharacterHandler::OnEndOverlap(Collider* pOwnedComponent, Collider* pOtherComponent)
